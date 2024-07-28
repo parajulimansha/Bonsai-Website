@@ -1,0 +1,158 @@
+/* THis ois the css style  sheet for the product page . THis file has been linked to the product 
+page hence any styles theat are done here affects the main HTMl page .*/
+
+
+*{
+
+   box-sizing: border-box;
+   font-family: sans-serif;
+   margin:0px;
+   
+
+ }
+ body{
+	/* this is to change the hole back ground of the page */
+	background-color:floralwhite;
+}
+
+h1{	/* this is for the first heading of the page that says OUR PRODUCT or bonsai */
+
+		background-color: #2E8B57 ;
+		text-align: center;
+		font-size: 40px ;
+		font-weight: bold;
+		border-radius: 20px;
+}
+		
+
+	}
+h2{/* THis is fpr the second heading  which we have used in  to name the bonsais. */
+
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+
+
+}
+
+
+
+.container{/* the .container is from the division sector it is inside a class of a perticular div 
+	tag this container class selects all the details of that tabeles perticular value and here we 
+	are stylingf it as per the design.*/ 
+	display: flex;
+	flex-wrap: wrap;
+/* This justify-content helps to create  gap between the columns and the rows or the full page.*/ 
+	justify-content: space-around;
+	text-align: left;
+	padding-left: 8px;
+	font-weight: bold;
+
+	
+	
+
+}
+
+img{
+/* This is for all the images that are kept inside the image tag . it is to allign the heigh 
+and the width of the image in order to make them of them of the same size and width .
+the box shadow  style is used to create a black shodow so that it gives a bit of asthetic feeling*/
+
+	width: 340px;
+	height: 450px;
+	box-shadow: 5px 5px 20px black;
+	border-radius: 15px
+
+}
+.detail{ 
+/* this is for the images and the h2 and pararaph section */
+
+	position: relative;/*It changes the position of the HTML element relative to where it normally appears.*/
+	text-align: center;
+}
+
+.overlay{
+
+	position: absolute;/* THIS helps toposition the elemnent at the specified cordinate ,
+but to be absolute it requiresa relative position int his we have detail as the realative popsition.*/
+
+/* the top and left given below are the cordinaates for the overlay class where this will be shown at 
+the detail class */
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.6); /* this background is for the detail to beshow such that the detail
+	background becomes black but transparent.*/
+	color:white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	opacity: 0;/* the opacity 0 means that the h2 and paragraph to be despalayed there will be invisible 
+	for the time.*/
+	transition: 0.5s;
+	/* changes the cursor from one style to another*/
+	cursor: pointer;
+}
+
+.overlay:hover{/* it is to add a hover effect such that whwenever we hover over the perticular images 
+				it shows the detail class which at tghe momment is hidden*/
+	opacity: 1;/* Since the Detail class is hidden we use the opacity to 1 such that whenever we 
+				hover over the images the detail class is shown and the opacity is removed and agai if we dont 
+				hover over the image the detail class will have the opacity to 0.*// 
+
+}
+
+.BUY{
+	/* this buy is a class for the buy now button*/ 
+	background-color: #D3D3D3;
+	background-color: green;
+	color: white;
+	font-size: 14px;
+	border-radius: 8px;
+	margin-bottom: 10px;/*this is to create a gap between the image and the button ie Buy now*/
+	
+
+
+
+}
+.BUY:hover{
+	/* This is to add an hover effect for the class buy whcich contains the buy button . */
+	background-color: #006400;
+	border-radius: 5px;
+	padding-left:  4px;
+	font-size: 15px;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+td{
+	text-align: center;/* This is to allign the data inserted in the table in systamatic order such that it does not look messy*/
+}
+	
+.footer
+{
+  background-color: maroon;
+  color: white;
+  padding: .25px 0;
+  text-align: center;
+  width: auto;
+}
+
+
+.footer img 
+{
+  border-radius: 100%;
+   width: 27px;
+  height: 25px;
+  margin: 2px;
+}
+
+p{
+	text-align: left;
+	padding-left: 8px;
+	font-weight: bold;
+}

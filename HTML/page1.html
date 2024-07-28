@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>HOME</title>
+
+			<meta name="Home" content="Home page"/>
+			<meta name="keywords" content="HTML" />
+			<meta name="Mansha Parajuli" content="Home"/>
+			<link rel="stylesheet" type="text/css" href="../CSS/page1.css"> <!--external css for the home page--> 
+			<link rel="stylesheet" type="text/css" href="../CSS/registerpopup.css"> <!--external css for the popup-->
+	<style>
+
+		/*Internal Css*/
+	.registerform
+	{
+		background: beige;
+		padding-left: 20px;
+	}
+	
+	.late 
+	{	background-image: url(../IMAGES/slider.jpg);
+  		display: flex;
+  		flex-direction: row;
+  		flex-wrap: wrap;
+  		width: 100%;
+	}
+
+	.here 
+	{
+ 		 
+
+		 flex: 33.33%;
+		 padding: 10px;
+		 margin-bottom: 100px;
+		 margin-top: 50px;
+	}
+
+		/* Styling the list */
+	.price 
+	{
+  		list-style-type: none;
+  		border: 1px solid #eee;
+ 		margin: 0;
+  		padding: 0;
+  		transition: 0.3s;
+  		
+	}
+
+		/* shows little bit shadow when hovered */
+	.price:hover
+	{
+  		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+	}
+
+		/* Pricing header */
+	.price .paper 
+	{
+  		background-color: #111;
+  		color: white;
+  		font-size: 25px;
+	}
+
+		/* this is for List items */
+	.price li {
+  		border-bottom: 1px solid #eee;
+  		padding: 20px;
+  		text-align: center;
+	}
+
+		/* this is the Grey list item */
+	.price .grey 
+	{
+  		background-color: #eee;
+  		font-size: 20px;
+
+	}
+
+		/* This is the  "Sign Up" button */
+	.button 
+	{
+  		background-color: #04AA6D;
+  		border: none;
+  		color: white;
+  		padding: 10px 25px;
+  		text-align: center;
+  		text-decoration: none;
+  		font-size: 18px;
+	}
+
+		/* Change the width of the three columns to 100%*/
+		@media only screen and (max-width: 600px)
+	{
+	  	.here 
+	  	{
+	    	width: 100%;
+	  	}
+	  	.trim
+	  	{
+	    	margin-top: 100px;
+	    	text-align: center;
+	    	font-family: serif;
+	    	font-size: 54px;
+	   	}
+	}
+	.pia{
+		display: flex;
+		flex-wrap: wrap;
+		
+		
+		
+	}
+	.api{
+		color: #000;
+		background-color:#6ab04c;
+  		border: none;
+  		padding: 10px 25px;
+  		text-decoration: none;
+  		align-content: center;
+  		margin: 10px;
+	}
+	.api:hover{
+		background-color: black;
+		color: white;
+	}
+	.moon{
+		padding: 10px 30px 0 10px;
+		margin: 2px 10px; 
+		margin-bottom: 50px;
+		text-align: justify;
+		background-color: #f1f1f1;
+		font-size: 18px;
+		
+	}
+
+	</style>
+
+</head>
+			<body>
+				<div class="popup">
+	 				<div class="bar">
+	 					<div class="bg">
+	 						<div class="image">
+	 				
+	 						</div>
+	 					</div>
+	 				<div class="reg-form">
+	 					<div class="close">&times;</div>
+	 						<form name="form" onsubmit="check()"class="registerform">
+
+	 							<div class="register">
+	 					
+        							<h2>Register For Our Newsletter</h2><br>
+						
+										<input type="text" id="fname" name="FirstName" placeholder="First Name" class="sub-form"><br>
+            			
+            							<input type="text" id="lname" name="LastName" placeholder="Last Name" class="sub-form"><br>
+
+            			
+            							<input type="integer" id="phone" name="Phone " placeholder="Phone " class="sub-form"><br>
+
+            			
+            							<input type="text" id="email" name="Email" placeholder="Email" class="sub-form"><br>
+						
+										<button class="btn"> Register</button class="sub-form">
+            					
+            					</div>
+  
+        					</form>
+
+    					</div>
+    				</div>
+    				</div>
+    
+    				<div>
+    					<header class="main-header">
+	
+
+			<img  class="logo"  src="../IMAGES/logo.jpg" alt="logo of the website">
+				<!--<form>
+						<input type="text" placeholder="search..." name="Search">
+					</form>-->
+				<nav class=" nav main-nav">
+					<div class="flex2">
+						<table class="table-bonsai">
+							<tr style="font-size: 22px;">
+								<td > <a href="page1.html" class="current">Home</a></td>  <!-- in lines css-->
+								<td > <a href="Bonsai.html">Blog</a></td>  <!-- in lines css-->
+								<td > <a href="productofficial.html">Products</a></td>  <!-- in lines css-->
+								<td > <a href="reference.html">References</a></td>  <!-- in lines css-->
+								<td > <a href="About Us.html">About us</a></td>  <!-- in lines css-->
+								<td > <a href="login&signup.html">Login</a></td>  <!-- in lines css-->
+							</tr>
+
+						</table>
+					</div>
+				</nav>
+						</header>
+    					
+						
+						<section>
+							
+							<div class="slider"> 
+								<h3 class="text">Welcome to our online bonsai plant store!</h3>
+									<div class="bar"></div>
+										<div class="slides"> <!--the div changes the images -->
+									  		<img class="pic" src="../IMAGES/cherry-blossom-bonsai.jpg" >
+									  		<img class="pic" src="../IMAGES/japnese-red-maple-bonsai.jpg">
+									  		<img class="pic" src="../IMAGES/willow-leaf-ficus.jpg">
+									  		<img class="pic" src="../IMAGES/weeping-fig-bonsai.jpg">
+									  		<img class="pic" src="../IMAGES/cherry-blossom-bonsai.jpg" >
+										</div>
+									</div>
+									
+									
+									<div class="topic">
+										<h2>Our Featured Products</h2>	
+											<div class="bar"></div>
+									</div>
+							
+									<table class="right">
+		
+										<tr>
+									  		<div class="colo">
+									  			<th class="photo">	
+									  				<img src="../IMAGES/cherry-blossom-bonsai.jpg" alt="Cherry Blossom"class="card-pic">
+									  					<h3>Cherry Blossom Bonsai</h3>
+									  						<h5>Fresh pale pink Cherry Blossom Bonsai straight from our cultivating fields.<br> Buy now!!</h5>
+									  						<p class="price1">RS 1500</p>
+									  						<p><button>Add to Cart</button></p>
+									  			</th>
+											</div>
+											<div class="colo">
+												<th class="photo">
+									  				<img src="../IMAGES/willow-leaf-ficus.jpg" alt="Cherry Blossom"class="card-pic">
+									  					<h3>Willow Leaf Ficus Bonsai</h3>
+									  						<h5>Fresh Willow Leaf Ficus Bonsai straight from our cultivating fields. <br> Buy now!!</h5>
+									  						<p class="price1">RS 900</p>
+									  						<p><button>Add to Cart</button></p>
+												</th>
+											</div>
+											<div class="colo">
+												<th class="photo">
+									  				<img src="../IMAGES/japnese-red-maple-bonsai.jpg" alt="Cherry Blossom"class="card-pic">
+									  					<h3>Japanese Red Maple Bonsai</h3>
+									  						<h5>Fresh Japanese Red Maple Bonsai straight from our cultivating fields. <br> Buy now!!</h5>
+									  						<p class="price1">RS 800</p>
+									  						<p><button>Add to Cart</button></p>
+												</th>
+											</div>
+											<div class="colo">
+												<th class="photo">
+									  				<img src="../IMAGES/Baby-Jade-Bonsai.jpg" alt="Cherry Blossom"class="card-pic">
+									  					<h3>Baby Jade Bonsai</h3>
+									  						<h5>Fresh Baby Jade Bonsai straight from our cultivating fields. <br> Buy now!!</h5>
+									  						<p class="price1">RS 1200</p>
+									  						<p><button>Add to Cart</button></p>
+									  	
+									  			</th>
+									  		</div>
+										</tr>
+									</table>
+								</div>
+								<div class="wp">
+								<div class="blog">
+									<h1>What's in our blog page</h1>
+									<div class="bar"></div>
+								</div>
+								<div class="moon">
+										<p>You may sell to people all over the world with an internet store, which can assist to dramatically improving your sales and audience. Given the fact that you might reach a considerably wider audience than you could with just a physical location is crucial for small businesses in particular.</p>
+										<p>The ability to buy and sell bonsai plants online has also been greatly aided by technology. E-commerce platforms such as Shopify make it simple for businesses to set up an online store and manage their sales, while social media and other marketing tools enable them to reach out to and engage with customers. </p><br>
+										<h4>Want to learn more in detail??</h4>
+										<li style="align-items:center;"class="pia"  style="text-align: center;"><a href="Bonsai.html" class="api">Learn More</a></li>
+
+									
+								</div>
+
+								<div class="blog">
+									<h1>Reference Page</h1>
+									<div class="bar"></div>
+								</div>
+									<div class="moon">
+										
+										<p>This section is kept for those who is interested to know how this website was actually inspired to be designed. In the page you can actually distinguish between the reference page and the page that we built. If you want some reference for your website you can visit the page.  </p>
+										<li style="align-items:center;"class="pia"  style="text-align: center;"><a href="reference.html" class="api">Click here to know more</a></li>
+									</div>
+
+								<div class="blog">
+									<h1>About Us</h1>
+									<div class="bar"></div>
+								</div>
+									<div class="moon">
+										
+										<p>This page contains the information about the bonasai plants and the portolio of the team members who helped in building this website. </p>
+										<li style="align-items:center;"class="pia"  style="text-align: center;"><a href="reference.html" class="api">Know more about our group members</a></li>
+									</div>
+							</div>
+								
+						
+						<div class="testimonial">
+							<div class="in">
+								<h1>TESTIMONIALS</h1>
+									<div class="bar"></div>
+										<div class="row">
+											<div class="col">
+												<div class="testimonials">
+													<img src="../IMAGES/pankaj.jpeg">
+														<div class="name">Pankaj Ranabhat</div>
+				
+															<p>"I was hesistant to buy bonsai tree online but I'm glad that I actually did bought one and to my suprise Bonsai Sellers sentme the amaging piece of tree. It was in the best possible condition, is blooming and looks so pretty."</p>
+												</div>	
+											</div>
+
+
+											<div class="col">
+												<div class="testimonials">
+													<img src="../IMAGES/agraja.jpeg">
+														<div class="name">Agraja Basnet</div>
+				
+															<p>"I've always been a fan of bonsai tree. I used to buy bonsai plant from a local shop nearby but after covid they stopped their business. While searching for the bonsai tree online I found this page and to my amusement they delivered the high quality of bonsai pant."</p>
+												</div>	
+											</div>
+
+
+											<div class="col">
+												<div class="testimonials">
+													<img src="../IMAGES/neharika.jpeg">
+														<div class="name">Neharika Thapa</div>
+												
+															<p>	"Recently bought a bonsai plant from here. Not only the plant was packaged properlyand delivered on time but the but the customer service here has set a benchmark for me."</p>
+												</div>	
+											</div>
+										</div>
+							</div>
+						</div>
+						
+						<div>
+  							<h1 class= "in" style="text-align: center; margin: 30px auto;"> Latest Packages</h1>
+  								<div class="bar"></div>
+  									<div class="late">
+  										<div class="here">
+										    <ul class="price">
+											    <li class="paper">Basic</li>
+											    <li class="grey">Rs 9,000 / year</li>
+											    <li>2 soil change</li>
+											    <li>1 free repotting</li>
+											    <li>5 free pruning</li>
+											    <li>6 sacks of Fertilizer</li>
+											    <li class="here"><a href="login&signup.html" class="button">Sign Up</a></li>
+										  	</ul>
+
+										</div>
+
+
+										 <div class="here">
+										  	<ul class="price">
+											    <li class="paper" style="background-color:#04AA6D" >Pro</li>
+											    <li class="grey">Rs 25,000/ year</li>
+											    <li>7 soil changes</li>
+											    <li>5 free repotting</li>
+											    <li>11 free pruning</li>
+											    <li>14 sacks of Fertilizer</li>
+											    <li class="here"><a href="login&signup.html" class="button">Sign Up</a></li>
+										  	</ul>
+										 
+										</div>
+
+
+
+
+										<div class="here">
+
+											<ul class="price">
+											    <li class="paper" style="background-color: #FFD700;">Premium</li>
+											    <li class="grey">Rs 50,000 / year</li>
+											    <li>12 free soil changes</li>
+											    <li>15 free repotting</li>
+											    <li>20 free pruning in home service</li>
+											    <li>25 sacks of fertilizer</li>
+											    <li class="here"><a href="login&signup.html" class="button">Sign Up</a></li>
+											</ul>
+										 
+										</div>
+									</div>
+						</div>
+					
+				</section>
+						<footer  class="social-media-links footer">
+						    <!--its shows the logo of the given socialmedias and redirects to the socialmedia's page when clicked-->
+						  <a href="https:/www.facebook.com/islingtoncollege" target="_blank"><img src="../IMAGES/facebook.png" alt="Facebook"></a>
+						  <a href="https:/www.instagram.com/islingtoncollege" target="_blank"><img src="../IMAGES/instagram.jpg" alt="Instagram"></a>
+						  <a href="https:/www.twitter.com/islingtoncollege" target="_blank"><img src="../IMAGES/twitter.png" alt="Twitter"></a>
+								
+								<p>Copyright &copy;Bonsai Plants - 2023</p>
+						</footer>
+	
+			</body>
+
+<script type="text/javascript" src="../JAVASCRIPT/trial.js"></script>    <!--Javascript for the popup----- Internal JS-->
+
+<script type="text/javascript">   /*Javascript for the popup----- Internal JS*/
+		const popup= document.querySelector(".popup")
+		const close= document.querySelector(".close")
+
+
+
+ 			window.addEventListener("load",function()
+ 			{
+	
+
+ 				setTimeout(function()
+ 				{
+
+ 				popup.classList.add("show");
+
+ 				},2000)
+
+			})
+ 			
+ 				close.addEventListener("click",function(){
+				popup.classList.remove("show");
+			})
+
+			function check(){
+				
+				var FirstName=document.forms['form']['fname'].value;
+				var LastName=document.forms['form']['lname'].value;
+				var Phone=document.forms['form']['phone'].value;
+				var Email=document.forms['form']['email'].value;
+		
+
+			if(FirstName=="" || LastName=="" || Phone=="" || Email=="")
+		
+			{
+				alert("Please look for the empty field.");
+
+			}
+
+			else
+			{
+				alert("You've been registered.");
+				
+				
+			}
+			}
+
+</script>
+
+</html>

@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.log
+{
+	height:550px;
+	width:100%;
+	background-image: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .4)) , url(../IMAGES/images.jpeg) ;
+	background-position: centre;
+	background-size: cover;
+	position: absolute;
+}
+
+.box
+{
+	width:380px;
+	height: 400px;
+	position: relative;
+	margin: 5% auto;
+	background: white;
+	padding: 5px;
+	overflow: hidden;
+	border-radius:35px;
+}
+
+.but
+{
+	
+	width:220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 3px blanchedalmond;
+	border-radius:35px ;
+}
+
+.toggle-but
+{
+	padding: 10px  30px ;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#boot
+{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, brown,floralwhite,blanchedalmond);
+	border-radius: 35px;
+	transition: 1s ;
+}
+
+.login
+{
+	border: 0px solid;
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transition : 1s;
+}
+
+.box-type
+{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px solid gray;
+	outline: none;
+	background:transparent ;
+}
+
+.btn
+{
+	width: 85%;
+	padding: 10px 35px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, brown,floralwhite,blanchedalmond);
+	border:0;
+	outline: none;
+	border-radius: 25px;
+
+}
+
+.check
+{
+	margin: 30px 5px ;
+}
+
+label
+{
+	color:#777;
+	font-size:12px ;
+	bottom: 64px;
+	position: absolute;
+}
+
+#login
+{
+	left:50px;
+}
+
+#Register
+{
+	left:450px;
+}
+.footer
+{
+  background-color: maroon;
+  color: white;
+  padding: .25px 0;
+  text-align: center;
+  width: auto;
+}
+
+.footer img 
+{
+  border-radius: 100%;
+   width: 27px;
+  height: 25px;
+  margin: 2px;
+}
+.current{
+	background-color:  rgba(255, 255, 255, .3);
+	padding: 5px;
+}

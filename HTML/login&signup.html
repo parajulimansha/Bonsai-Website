@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login And Signup</title>
+		<meta name="Login And Signup" content="Login And Signup" />
+		<meta name="keywords" content="HTML" />
+		<meta name="Mansha Parajuli" content="login"/>
+		<link rel="stylesheet" type="text/css" href="../CSS/login&signup.css">
+
+</head>
+<style>
+.flex2{
+ 	display: flex;
+ 	justify-content: flex-end;<!--used to align the box in the middle-->
+ 	align-items: center;
+ 	padding: 10px;
+ }
+.table-bonsai{
+	
+	width: 50%;
+	height: 60px;
+	padding-top:15px;
+	padding-bottom: 10px;
+}
+
+.nav a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+.nav a:hover{ /*The nav a is for the navigagation bar that contains the a tag which has the link */
+	border-radius: 5px;
+	padding: 2px;
+	background-color: rgba(255, 255, 255, .3);
+	transition: 0.5s;
+
+
+}
+
+
+.main-header
+{
+	background-color:#800000 ;
+	background-size: cover;
+	padding-bottom: 5px;
+}
+
+.logo{
+	
+	width:200px;
+	height: 85px;
+	position: absolute;
+	box-shadow: none;
+	border-radius: 1px;
+}
+.current{
+	background-color:  rgba(255, 255, 255, .3);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+
+</style>
+
+		<body>
+			<header class="main-header">
+	
+
+				<img  class="logo"  src="../IMAGES/logo.jpg" alt="logo of the website">
+
+					<nav class=" nav main-nav">
+						<div class="flex2">
+
+							<table class="table-bonsai">
+								<tr style="font-size: 22px;">
+									<!-- in lines css-->
+									<td> <a href="page1.html">Home</a></td>  
+									<td> <a href="Bonsai.html">Blog</a></td>  
+									<td> <a href="productofficial.html">Products</a></td>  
+									<td> <a href="reference.html">References</a></td>  
+									<td> <a href="About Us.html">About us</a></td>
+									<td> <a href="login&signup.html" class="current">Login</a></td>  
+
+								</tr>
+
+						</table>
+						</div>
+					</nav>
+
+
+
+			</header>
+
+
+			<div class="log">
+				<div class="box">
+					<div class="but">
+						<div id="boot"></div>
+							<button type="button" class="toggle-but" onclick="login()">LogIn</button> <!--used buttons to help toggle the login and registration pages-->
+							<button type="button" class="toggle-but" onclick="Register()">Register</button>
+						</div>
+						          <!--form for login-->
+						<div class="login" id="login">
+							<form name="form" onsubmit="check()" >
+								
+								<input type="text" id="name" name="Username" placeholder="Username" class="box-type"><br>
+								<input type="text" id="name" name="Password" placeholder="Password"class="box-type"><br>
+		            			<input type="checkbox" id="remember" name="Remember" value="login"class="check">
+		            			<label for="forpeople">Remember me</label><br>
+		            			<button class="btn"> Log in</button>
+            		
+    						</form>
+    					</div>
+    					<!--form or registeration-->
+    					
+    					<div class="login" id="Register">
+    						<form name="form" onsubmit="check()" >
+								
+								<input type="text" id="name" name="Username" placeholder="Username" class="box-type"><br>
+								<input type="text" id="name" name="Email" placeholder="Email" class="box-type"><br>
+								<input type="text" id="name" name="Password" placeholder="Password"class="box-type"><br>
+								<input type="checkbox" id="remember" name="Remember" value="login"class="check">
+								<label for="forpeople">I accept the terms & conditions</label><br>
+            					<center>
+            					<button class="btn"> Register</button>
+            					</center>
+            		
+    						</form>
+						</div>
+				</div>
+						<footer  class="social-media-links footer">
+		   
+		    <!--its shows the logo of the given socialmedias and redirects to the socialmedia's page when clicked-->
+
+						  <a href="https:/www.facebook.com/islingtoncollege" target="_blank"><img src="../IMAGES/facebook.png" alt="Facebook"></a>
+						  <a href="https:/www.instagram.com/islingtoncollege" target="_blank"><img src="../IMAGES/instagram.jpg" alt="Instagram"></a>
+						  <a href="https:/www.twitter.com/islingtoncollege" target="_blank"><img src="../IMAGES/twitter.png" alt="Twitter"></a>
+
+					  			<p>Copyright &copy;Bonsai Plants - 2023</p>
+						</footer>
+			
+			
+	
+			
+</body>
+
+	<script type="text/javascript" src="../JAVASCRIPT/login&signup.js"></script> <!--javascript used for the validation and changing for the form-->
+
+</html>

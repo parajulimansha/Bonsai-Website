@@ -1,0 +1,97 @@
+/*-------------css for the banner--------------*/
+
+
+
+.shape{                            
+  position: relative;
+  width: 100%;
+}
+
+.trip{                             /* adjusting the height and weight of the img uploaded*/  
+  height: 20%;
+  width:100%;
+   display: block;
+
+}  
+.save{                             /*css to create text that appears when hovered*/
+
+  width: 100%;
+  position:absolute;
+  bottom:0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* it will create opaque transparency effect */
+  color: #f1f1f1;
+  transition: 0.1s ease;          /*texts will appear when hovered just within 0.1 second*/
+  opacity:0;
+  color: white;
+  font-size: 60px;
+  padding: 60px;
+  text-align:center;
+  margin-bottom: 350px;
+}
+.shape:hover .save {
+  opacity: 1;
+}
+
+
+
+/*-------Css for the navigation bar-------*/
+    *{
+
+   box-sizing: border-box;
+   font-family: sans-serif;
+   padding: 0px;
+   margin:0px;
+   
+
+ }
+ 
+ .flex2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+ }
+ .table-bonsai{
+  
+  width: 50%;
+  height: 60px;
+  padding-top:15px;
+}
+
+.nav a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.nav a:hover{ /*The nav a is for the navigagation bar that contains the a tag which has the link */
+  border-radius: 5px;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, .3);
+  transition: 0.5s;
+
+
+}
+.current{
+  background-color:  rgba(255, 255, 255, .3);
+  padding: 5px;
+}
+.main-header
+{
+  background-color:#800000 ;
+  background-size: cover;
+  padding-bottom: 5px;
+}
+
+.logo{
+  
+width:175px;
+height: 50px;
+position: absolute;
+box-shadow: none;
+border-radius: 1px;
+
+
+}
